@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Daftar Pemain Sepak Bola</title>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-form">
+            <h1>Login</h1>
+            <input type="text" placeholder="Username" id="username"> <br>
+            <input type="password" placeholder="Password" id="password"> <br>
+            <button id="loginButton">Login</button>
+        </div>
+    </div>
+
+    <div class="main-container hidden">
+        <div class="outer-container">
+            <div class="players-list-container">
+                <div class="players-list">
+                    <h2>Daftar Pemain</h2>
+                    <ul id="players"></ul>
+                </div>
+            </div>
+            <div class="form-container">
+                <h1 id="formTitle">Daftar Pemain Sepak Bola</h1>
+                <div class="form">
+                    <input type="text" placeholder="Nama" data-input="nama" id="nama"> <br>
+                    <input type="number" placeholder="Umur" data-input="umur" id="umur"> <br>
+                    <input type="text" placeholder="Negara" data-input="negara" id="negara"> <br>
+                    <input type="text" placeholder="Club" data-input="club" id="club"> <br>
+                    <button data-button="kirim" id="kirimButton">Kirim</button>
+                    <button data-button="batal" id="batalButton">Batal</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--FIREBASE WAJIB-->
+    <script src="https://www.gstatic.com/firebasejs/11.4.0/firebase-app-compat.js"></script>
+
+    <!--FIREBASE PILIHAN-->
+    <script src="https://www.gstatic.com/firebasejs/11.4.0/firebase-database-compat.js"></script>
+
+    <script src="./scripts/firebase-config.js"></script>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
